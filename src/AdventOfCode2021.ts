@@ -7,7 +7,7 @@ declare const require: any;
 phantom.exit = function (): any {};
 /* ----------- */
 
-require("./Tools").readInput("inputs/day_01.txt");
+const tools = require("./Tools");
 const solutions = require("./solutions/All").solutions;
 console.log("Advent of code 2015 solutions:");
 

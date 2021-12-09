@@ -10,9 +10,7 @@ if (!_env["AOC_SESSION"]) {
     phantom.exit();
 }
 
-const page = require('webpage').create();
-
-page.addCookie({
+phantom.addCookie({
   "name"   : "session",
   "value"  : _env["AOC_SESSION"],
   "domain" : "adventofcode.com"
@@ -22,10 +20,11 @@ let counter = 0;
 
 for (let i = 1; i <= _sol.length / 2; i++) {
     let url = `https://adventofcode.com/2015/day/${i}/input`;
+    const page = require('webpage').create();
     page.open(url, function () {
         console.log("Downloading: " + `inputs/day_${(i < 10) ? "0" : ""}${i}.txt`);
         let data = page.evaluate(() => { return document.documentElement.innerText });
-        _fs.write(`inputs/day_${(i < 10) ? "0" : ""}${i}.txt`, `${data}\n`, "w");
+        _fs.write(`inputs/day_${(i < 10) ? "0" : ""}${i}.txt`, `${data}`, "w");
         counter++;
         if (counter == _sol.length / 2) phantom.exit();
     });
