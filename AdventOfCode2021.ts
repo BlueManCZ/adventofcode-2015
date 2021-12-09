@@ -1,18 +1,15 @@
 #!/usr/bin/env phantomjs
 
-/* ENVIRONMENT */
+/* TS ENVIRONMENT */
 declare const module: any;
 declare const phantom: any;
 declare const require: any;
-const fs = require("fs");
 phantom.exit = function (): any {};
 /* ----------- */
 
-let day1 = require("./solutions/Day01");
-
-const solutions = [
-    day1.a, day1.b
-]
+require("./Tools").readInput("inputs/day_01.txt");
+const solutions = require("./solutions/All").solutions;
+console.log("Advent of code 2015 solutions:");
 
 for (let counter = 0; counter < solutions.length;) {
     const day = Math.round(counter / 2) + 1;

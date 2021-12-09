@@ -8,6 +8,8 @@
   },
   "include": [
     "solutions/*",
-    "AdventOfCode2021.ts"
+    "AdventOfCode2021.ts",
+    "DownloadInputs.ts",
+    "Tools.ts"
   ]
 }

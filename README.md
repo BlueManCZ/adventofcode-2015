@@ -5,5 +5,6 @@ and [`phantomjs`](https://phantomjs.org/).
 
 ```shell
 tsc --build tsconfig.json
+phantomjs build/DownloadInputs.js
 phantomjs build/AdventOfCode2021.js
 ```
