@@ -1,4 +1,4 @@
-function prepareInput1() {
+function prepareInput2() {
     let content = tools.readInput("inputs/day_02.txt");
     let rows = content.split("\n");
     return rows.map((row: string) => {
@@ -12,7 +12,7 @@ function prepareInput1() {
 
 module.exports = {
     a: () => {
-        const sizes = prepareInput1();
+        const sizes = prepareInput2();
         return sizes.map((row: number[]) => {
             if (row.length != 3) return 0;
             const areas = row.map(function (item, index): number {
@@ -24,7 +24,7 @@ module.exports = {
     },
 
     b: () => {
-        const sizes = prepareInput1();
+        const sizes = prepareInput2();
         return sizes.map((row: number[]) => {
             if (row.length != 3) return 0;
             row.sort((a, b) => a - b);
