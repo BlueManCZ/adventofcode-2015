@@ -7,9 +7,9 @@
     "outDir": "build"
   },
   "include": [
-    "solutions/*",
-    "AdventOfCode2021.ts",
-    "DownloadInputs.ts",
-    "Tools.ts"
+    "src/solutions/*",
+    "src/AdventOfCode2021.ts",
+    "src/DownloadInputs.ts",
+    "src/Tools.ts"
   ]
 }
