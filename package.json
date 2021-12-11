@@ -1,0 +1,22 @@
+{
+  "name": "adventofcode-2015",
+  "description": "Advent of code 2015 solutions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueManCZ/adventofcode-2015.git"
+  },
+  "author": "Ivo Šmerek",
+  "bugs": {
+    "url": "https://github.com/BlueManCZ/adventofcode-2015/issues"
+  },
+  "homepage": "https://github.com/BlueManCZ/adventofcode-2015#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
+  }
+}
